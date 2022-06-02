@@ -2,18 +2,18 @@ import numpy as np
 
 
 def throw(ndarts):
-    """Function that 'throws n darts'
+    """Function that *throws n darts*
 
     This functions generates n sets of coordinates that are each drawn from a uniform distribution between -1 and 1
 
     Parameters
     ----------
-    n: int
+    ndarts : int
         Number of coordinates to draw (darts to throw).
 
     Returns
     -------
-    darts: array
+    darts : array
         array of size (2xn) with the coordinates of darts thrown.
     """
     return (np.random.rand(2, ndarts) - 0.5) * 2
@@ -24,14 +24,14 @@ def is_in_unit_circle(dart):
 
     function that checks whether a coordinate `dart` is inside the unit circle
 
-    Paramters
-    ---------
-    dart: array
+    Parameters
+    ----------
+    dart : array
         Array of coordinates (dart positions) with size (2xn)
 
     Returns
     -------
-    isincircle: array (boolean)
+    isincircle : array (boolean)
         Array of size n set to `True` where `dart` is in the unit circle, false otherwise.
     """
 
@@ -48,12 +48,12 @@ def estimate_pi(ndarts):
 
     Parameters
     ----------
-    ndarts: int
+    ndarts : int
         number of darts to throw
 
     Returns
     -------
-    pi: float
+    pi : float
         An estimate for pi
     """
     darts = throw(ndarts)
@@ -66,14 +66,14 @@ def make_realisation(nrea, ndarts):
 
     Parameters
     ----------
-    nrea: int
+    nrea : int
         number of realisation
-    ndarts: int
+    ndarts : int
         number of darts thrown at each realisation
 
     Returns
     -------
-    pies: array
+    pies : array
         array of the estimates of pi at each iteration
     """
     pies = []
@@ -89,16 +89,16 @@ def get_pi_accuracy(nrea, nthrows):
 
     Parameters
     ----------
-    nrea: int
+    nrea : int
         number of realisations of throws for each number of throws
-    nthrows: array
+    nthrows : array
         array containing numbers of throws for which we want `nrea` realisations
 
     Returns
     -------
-    mean: array
+    mean : array
         mean estimates
-    std: array
+    std : array
         errors
     None
     """
