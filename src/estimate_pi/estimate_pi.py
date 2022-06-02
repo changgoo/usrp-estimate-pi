@@ -7,14 +7,14 @@ def throw(ndarts):
     This functions generates n sets of coordinates that are each drawn from a uniform distribution between -1 and 1
 
     Parameters
-    ==========
+    ----------
     n: int
-        Number of coordinates to draw (darts to throw)
+        Number of coordinates to draw (darts to throw).
 
     Returns
-    =======
+    -------
     darts: array
-        array of size (2xn) with the coordinates of darts thrown
+        array of size (2xn) with the coordinates of darts thrown.
     """
     return (np.random.rand(2, ndarts) - 0.5) * 2
 
@@ -25,12 +25,12 @@ def is_in_unit_circle(dart):
     function that checks whether a coordinate `dart` is inside the unit circle
 
     Paramters
-    =========
+    ---------
     dart: array
         Array of coordinates (dart positions) with size (2xn)
 
     Returns
-    =======
+    -------
     isincircle: array (boolean)
         Array of size n set to `True` where `dart` is in the unit circle, false otherwise.
     """
@@ -47,12 +47,12 @@ def estimate_pi(ndarts):
     """Function that estimates pi using the 'throw of darts' method
 
     Parameters
-    ==========
+    ----------
     ndarts: int
         number of darts to throw
 
     Returns
-    =======
+    -------
     pi: float
         An estimate for pi
     """
@@ -65,14 +65,14 @@ def make_realisation(nrea, ndarts):
     """function that makes `nrea` realisations of `ndarts` dart throws and records the result
 
     Parameters
-    ==========
+    ----------
     nrea: int
         number of realisation
     ndarts: int
         number of darts thrown at each realisation
 
     Returns
-    =======
+    -------
     pies: array
         array of the estimates of pi at each iteration
     """
@@ -88,14 +88,14 @@ def get_pi_accuracy(nrea, nthrows):
     of dart `nthrows` dart throws
 
     Parameters
-    ==========
+    ----------
     nrea: int
         number of realisations of throws for each number of throws
     nthrows: array
         array containing numbers of throws for which we want `nrea` realisations
 
     Returns
-    =======
+    -------
     mean: array
         mean estimates
     std: array
