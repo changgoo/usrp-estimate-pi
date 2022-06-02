@@ -1,0 +1,18 @@
+site_name: Estimate pi
+nav:
+    - Home: index.md
+theme:
+  name: "material"
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          selection:
+            docstring_style: "numpy"
+          rendering:
+            show_source: false
+      custom_templates: templates
+      watch:
+        - src/estimate_pi
