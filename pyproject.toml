@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "estimate_pi"
-version = "0.1.0"
+version = "0.1.2"
 description = ""
 authors = ["Chang-Goo Kim <changgoo@princeton.edu>"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.8"
 numpy = "^1.22.4"
 matplotlib = "^3.5.2"
 

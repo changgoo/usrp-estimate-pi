@@ -2,7 +2,7 @@ import numpy as np
 
 
 def throw(ndarts):
-    """Function that *throws n darts*
+    """Function that throws n darts
 
     This functions generates n sets of coordinates that are each drawn from a uniform distribution between -1 and 1
 
@@ -100,7 +100,6 @@ def get_pi_accuracy(nrea, nthrows):
         mean estimates
     std : array
         errors
-    None
     """
     mean = []
     std = []

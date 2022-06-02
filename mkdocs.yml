@@ -1,9 +1,16 @@
 site_name: Estimate pi
 nav:
     - Home: index.md
-    - Package: estimate_pi.md
+    - Usage: usage.md
+    - Code Reference: estimate_pi.md
 theme:
   name: "material"
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 plugins:
   - search
   - mkdocstrings:
