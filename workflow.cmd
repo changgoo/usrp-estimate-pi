@@ -10,7 +10,7 @@
   889  cd estimate_pi/
   891  poetry add numpy
   893  poetry add -D jupyterlab
-  894  poetry add -D mkdocs mkdocstrings mkdocs-material
+  894  poetry add -D mkdocs mkdocstrings-python mkdocs-material
   896  poetry add -D pytkdocs -E numpy-style
   897  poetry run mkdocs new .
   899  cd src/
