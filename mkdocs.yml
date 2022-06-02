@@ -1,17 +1,17 @@
 site_name: Estimate pi
 nav:
     - Home: index.md
+    - Package: estimate_pi.md
 theme:
   name: "material"
 plugins:
   - search
   - mkdocstrings:
-      default_handler: python
       handlers:
         python:
-          selection:
+          paths: [src]
+          options:
             docstring_style: "numpy"
-          rendering:
             show_source: false
       custom_templates: templates
       watch:
